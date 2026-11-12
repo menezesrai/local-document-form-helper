@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Employee form demonstration</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-document-form-demo>
+    <aside>
+      <p class="brand">NORTHSTAR RETAIL</p>
+      <nav aria-label="Demonstration navigation">
+        <a href="#employee" aria-current="page">Employee record</a>
+        <a href="#documents">Documents</a>
+        <a href="#history">History</a>
+      </nav>
+      <p class="demo-note">Fictional system<br>Public demonstration</p>
+    </aside>
+
+    <main>
+      <header>
+        <div>
+          <p class="eyebrow">PEOPLE OPERATIONS / NEW RECORD</p>
+          <h1>Employee registration</h1>
+          <p>Review the imported information before saving the record.</p>
+        </div>
+        <button id="reset-form" type="button" class="secondary">Clear form</button>
+      </header>
+
+      <form id="employee" aria-label="Fictional employee registration form">
+        <section>
+          <h2>Personal information</h2>
+          <div class="grid">
+            <label class="wide">Full name<input data-field="name" autocomplete="off"></label>
+            <label>CPF<input data-field="cpf" autocomplete="off"></label>
+            <label>Birth date<input data-field="birthDate" autocomplete="off"></label>
+            <label>Phone<input data-field="phone" autocomplete="off"></label>
+            <label>Email<input data-field="email" type="email" autocomplete="off"></label>
+          </div>
+        </section>
+
+        <section>
+          <h2>Address</h2>
+          <div class="grid">
+            <label class="wide">Street<input data-field="street" autocomplete="off"></label>
+            <label>Number<input data-field="number" autocomplete="off"></label>
+            <label>Complement<input data-field="complement" autocomplete="off"></label>
+            <label>District<input data-field="district" autocomplete="off"></label>
+            <label>City<input data-field="city" autocomplete="off"></label>
+            <label>State<input data-field="state" autocomplete="off"></label>
+            <label>ZIP code<input data-field="zipCode" autocomplete="off"></label>
+          </div>
+        </section>
+
+        <section>
+          <h2>Employment</h2>
+          <div class="grid">
+            <label>Admission date<input data-field="admissionDate" autocomplete="off"></label>
+            <label>Department<input data-field="department" autocomplete="off"></label>
+            <label>Job title<input data-field="jobTitle" autocomplete="off"></label>
+            <label>Salary<input data-field="salary" autocomplete="off"></label>
+          </div>
+        </section>
+
+        <footer>
+          <p>This demonstration does not send or store the form.</p>
+          <button type="button" disabled>Save employee</button>
+        </footer>
+      </form>
+    </main>
+
+    <script>
+      document.querySelector("#reset-form").addEventListener("click", () => {
+        document.querySelector("#employee").reset();
+        document.querySelectorAll("[data-filled-by-demo]").forEach((field) => {
+          delete field.dataset.filledByDemo;
+        });
+      });
+    </script>
+  </body>
+</html>
+

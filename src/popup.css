@@ -1,0 +1,163 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  color: #17202a;
+  background: #f3f1ec;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 400px;
+  margin: 0;
+}
+
+main {
+  padding: 22px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #52616d;
+  font: 700 10px/1.2 ui-monospace, SFMono-Regular, Consolas, monospace;
+  letter-spacing: 0.12em;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.intro,
+.footnote {
+  color: #5d6872;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.file-picker {
+  display: grid;
+  gap: 6px;
+  margin-top: 14px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #c8c4ba;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.notice {
+  margin-top: 14px;
+  padding: 10px 12px;
+  border-left: 3px solid #2f728f;
+  background: #e8eff2;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.notice.error {
+  border-color: #9d3d37;
+  color: #6f2520;
+  background: #f5e7e5;
+}
+
+.notice.warning {
+  border-color: #9a6c1c;
+  background: #f5eddc;
+}
+
+section {
+  margin-top: 18px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.section-heading span {
+  color: #6e777f;
+  font-size: 10px;
+}
+
+dl {
+  margin: 0;
+  border-top: 1px solid #d5d1c8;
+}
+
+dl div {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 10px;
+  padding: 7px 0;
+  border-bottom: 1px solid #d5d1c8;
+}
+
+dt {
+  color: #68737d;
+  font-size: 11px;
+}
+
+dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+button {
+  width: 100%;
+  margin-top: 16px;
+  padding: 11px 14px;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  background: #1c617e;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #154b62;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #d08b2d;
+  outline-offset: 2px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background: #9da6ab;
+}
+
+.footnote {
+  margin: 10px 0 0;
+}
+
+.hidden {
+  display: none;
+}
+

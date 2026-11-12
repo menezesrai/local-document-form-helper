@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Local Document Form Helper</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">PUBLIC DEMO</p>
+      <h1>Prepare the form</h1>
+      <p class="intro">Choose the supported registration PDF and its contact TXT file. Both files stay in this browser.</p>
+
+      <label class="file-picker">
+        <span>Registration PDF</span>
+        <input id="pdf-file" type="file" accept="application/pdf,.pdf">
+      </label>
+
+      <label class="file-picker">
+        <span>Contact TXT</span>
+        <input id="txt-file" type="file" accept="text/plain,.txt">
+      </label>
+
+      <div id="status" class="notice" aria-live="polite">Select both files to review the extracted values.</div>
+
+      <section id="preview" class="hidden" aria-labelledby="preview-title">
+        <div class="section-heading">
+          <h2 id="preview-title">Review</h2>
+          <span>Fictional demo</span>
+        </div>
+        <dl id="preview-fields"></dl>
+      </section>
+
+      <button id="fill-form" type="button" disabled>Fill demonstration form</button>
+      <p class="footnote">This version only works with the included demo page. It never submits the form.</p>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
+

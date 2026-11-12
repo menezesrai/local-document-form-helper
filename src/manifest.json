@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Local Document Form Helper",
+  "version": "1.0.0",
+  "description": "Reads a supported local registration PDF and prepares a demonstration form for review.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_title": "Local Document Form Helper",
+    "default_popup": "popup.html"
+  }
+}
+

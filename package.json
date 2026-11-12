@@ -1,0 +1,17 @@
+{
+  "name": "local-document-form-helper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^6.2.108"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.9"
+  }
+}
+
